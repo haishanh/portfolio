@@ -1,0 +1,34 @@
+spoon-knife:
+  name: Spoon-Knife
+  date: 2014-02-05
+  description:
+    - Provide an example for forking a repository on GitHub.
+    - Creating a fork is producing a personal copy of someone else's project.
+    - Forks act as a sort of bridge between the original repository and your personal copy.
+    - You can submit Pull Requests to help make other people's projects better by offering your changes up to the original project.
+    - Forking is at the core of social coding at GitHub.
+  thumb: https://avatars3.githubusercontent.com/u/583231?v=3&s=400
+  links:
+    demo: https://github.com/octocat/hello-worId
+    repo: https://github.com/octocat/hello-worId
+
+gitignore:
+  name: gitignore
+  date: 2011-01-27
+  description:
+    - This is GitHub’s collection of .gitignore file templates.
+  repository: https://github.com/github/gitignore
+  thumb: https://avatars3.githubusercontent.com/u/9919?v=3&s=200
+  links:
+    demo: https://github.com/github/gitignore
+    repo: https://github.com/github/gitignore
+
+random-project:
+  name: Random Project
+  date: 2016-08-03
+  description:
+    - This is a random project, bla, bla, bla...
+  repository: https://github.com/
+  thumb: http://i.imgur.com/RUpiPpd.jpg
+  links:
+    demo: https://github.com/
