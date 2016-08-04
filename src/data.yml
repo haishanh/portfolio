@@ -19,6 +19,8 @@ gitignore:
     - This is GitHub’s collection of .gitignore file templates.
   repository: https://github.com/github/gitignore
   thumb: https://avatars3.githubusercontent.com/u/9919?v=3&s=200
+  style:
+    background: "#4abb4e"
   links:
     demo: https://github.com/github/gitignore
     repo: https://github.com/github/gitignore
@@ -31,4 +33,4 @@ random-project:
   repository: https://github.com/
   thumb: http://i.imgur.com/RUpiPpd.jpg
   links:
-    demo: https://github.com/
+    demo: https://google.com

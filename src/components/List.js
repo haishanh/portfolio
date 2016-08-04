@@ -1,6 +1,16 @@
 import React, { PropTypes } from 'react';
 
-const List = ({ id, name, thumb, date, description, links }) => {
+import Icon from './Icon';
+
+function getLinkIcon(link) {
+  if (/https:\/\/github.com/.test(link)) {
+    return <Icon name="github" />;
+  }
+
+  return null;
+}
+
+const List = ({ id, name, thumb, date, description, links, style }) => {
 
   // FIXME links.demo is undefined
   let thumbBlock = null;
@@ -21,13 +31,18 @@ const List = ({ id, name, thumb, date, description, links }) => {
 
   if (links) {
     linksBlock = Object.keys(links).map((k, id) => {
-      return <a key={ id } href={ links[k] }>{ k }</a>;
+      let icon = getLinkIcon(links[k]);
+      return <a key={ id } href={ links[k] }>
+              { icon }
+              { k }
+             </a>;
     });
   }
 
+  console.log(style);
 
   return (
-    <div className="card">
+    <div className="card" style={style}>
       { thumbBlock }
       <div className="card__content">
         <div className="card__header">

@@ -2,14 +2,40 @@
   display: flex;
   align-items: center;
   background: #fff;
+  width: 800px;
+  margin: 0 auto;
   padding: 20px 20px;
+  margin-bottom: 25px;
+  // shadow
+  box-shadow: #666 0px 2px 25px 1px;
+  &__thumb {
+    flex-basis: 33%;
+    img {
+      max-width: 100%;
+    }
+  }
   &__content {
+    flex-basis: 67%;
     margin-left: 15px;
   }
   &__links {
     display: flex;
     a {
       padding: 8px;
+      line-height: 1.4em;
+      display: flex;
+      align-items: center;
+      &:first-child {
+        padding-left: 0;
+      }
+      // &[href^="https://github.com"] {
+      //   color: #000;
+      // }
+      .icon {
+        margin-right: 5px;
+        width: 1em;
+        height: 1em;
+      }
     }
   }
 }

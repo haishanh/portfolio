@@ -29,10 +29,10 @@ class ListContainer extends Component {
     }
 
     let items = Object.keys(this.state.data).map(item => {
-      return <List key={item} {...this.state.data[item]}/>;
+      return <List key={item} {...this.state.data[item]} />;
     });
 
-    return <div>{ items }</div>;
+    return <div className="content">{ items }</div>;
   }
 
 }

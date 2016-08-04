@@ -17,10 +17,7 @@ class App extends Component {
             <Search />
           </div>
         </div>
-
-        <div className="content">
-          <ListContainer />
-        </div>
+        <ListContainer />
         <Footer />
       </div>
     );
