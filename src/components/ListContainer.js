@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import List from './List';
+import Loading from './Loading';
 
 class ListContainer extends Component {
 
@@ -25,7 +26,7 @@ class ListContainer extends Component {
 
   render = () => {
     if (!this.state.data) {
-      return <strong>No data!</strong>;
+      return <Loading />;
     }
 
     let items = Object.keys(this.state.data).map(item => {

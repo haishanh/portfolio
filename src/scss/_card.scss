@@ -1,5 +1,7 @@
 .card {
-  display: flex;
+  // display: flex;
+  // flex-direction: column;
+  text-align: center;
   align-items: center;
   background: #fff;
   width: 800px;
@@ -7,19 +9,21 @@
   padding: 20px 20px;
   margin-bottom: 25px;
   // shadow
-  box-shadow: #666 0px 2px 25px 1px;
+  // box-shadow: #ddd 0px 2px 10px 1px;
+  border: 1px dashed #ccc;
   &__thumb {
-    flex-basis: 33%;
+    //flex-basis: 33%;
     img {
-      max-width: 100%;
+      // width: 100%;
+      max-width: 300px
     }
   }
   &__content {
-    flex-basis: 67%;
-    margin-left: 15px;
+    // flex-basis: 67%;
   }
   &__links {
     display: flex;
+    justify-content: center;
     a {
       padding: 8px;
       line-height: 1.4em;
