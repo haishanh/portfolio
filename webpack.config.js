@@ -9,8 +9,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'app.bundle.js',
-    publicPath: '/static/'
+    filename: 'app.bundle.js'
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin()
