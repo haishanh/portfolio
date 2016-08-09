@@ -7,6 +7,7 @@
     "build": "webpack --config webpack.prod.config.js --progress -p --colors",
     "start": "node server.js",
     "lint": "eslint src",
+    "deploy": "deploy -d dist -b gh-pages",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
