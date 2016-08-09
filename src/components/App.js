@@ -2,7 +2,6 @@ import React, { Component, PropTypes } from 'react';
 
 import ListContainer from './ListContainer';
 import Icon from './Icon';
-import Search from './Search';
 import Footer from './Footer';
 
 class App extends Component {
@@ -11,11 +10,11 @@ class App extends Component {
       <div>
         <div className="header">
           <a href="/">
-            <Icon name="doba" />
+            <Icon name="portfolio" />
           </a>
-          <div className="search-wrapper">
-            <Search />
-          </div>
+          <p>
+            Hi there, I'm Haishan. Welcome to my portfolio.
+          </p>
         </div>
         <ListContainer />
         <Footer />
