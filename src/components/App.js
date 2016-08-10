@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 
-import ListContainer from './ListContainer';
+import CardsContainer from './CardsContainer';
 import Icon from './Icon';
 import Footer from './Footer';
 
@@ -16,7 +16,7 @@ class App extends Component {
             Hi there, I'm Haishan. Welcome to my portfolio.
           </p>
         </div>
-        <ListContainer />
+        <CardsContainer />
         <Footer />
       </div>
     );

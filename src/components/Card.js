@@ -10,7 +10,7 @@ function getLinkIcon(link) {
   return null;
 }
 
-const List = ({ id, name, thumb, date, description, links, style }) => {
+const Card = ({ id, name, thumb, date, description, links, style }) => {
 
   // FIXME links.demo is undefined
   let thumbBlock = null;
@@ -39,8 +39,6 @@ const List = ({ id, name, thumb, date, description, links, style }) => {
     });
   }
 
-  console.log(style);
-
   return (
     <div className="card" style={style}>
       { thumbBlock }
@@ -63,8 +61,8 @@ const List = ({ id, name, thumb, date, description, links, style }) => {
   );
 }
 
-List.propTypes = {
+Card.propTypes = {
   name: PropTypes.string.isRequired
 };
 
-export default List;
+export default Card;

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import List from './List';
+import Card from './Card';
 import Loading from './Loading';
 
-class ListContainer extends Component {
+class CardsContainer extends Component {
 
   state = {
     data: undefined
@@ -11,12 +11,11 @@ class ListContainer extends Component {
 
   componentDidMount = () => {
 
-    console.log('fetch data...');
+    // console.log('fetch data...');
 
     fetch('data.json')
       .then( res => res.json())
       .then( json => {
-        console.log(json);
         this.setState({data: json});
       })
       .catch( reason => {
@@ -30,7 +29,7 @@ class ListContainer extends Component {
     }
 
     let items = Object.keys(this.state.data).map(item => {
-      return <List key={item} {...this.state.data[item]} />;
+      return <Card key={item} {...this.state.data[item]} />;
     });
 
     return <div className="content">{ items }</div>;
@@ -38,4 +37,4 @@ class ListContainer extends Component {
 
 }
 
-export default ListContainer;
+export default CardsContainer;
