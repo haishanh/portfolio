@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import 'whatwg-fetch';
 import Card from './Card';
 import Loading from './Loading';
 
