@@ -3,7 +3,7 @@ hexo-theme-zxcvb:
   date: 2016-04-09
   description:
     - A Hexo(like Jekyll) theme, using SCSS and Jade.
-  thumb: https://raw.githubusercontent.com/haishanh/hexo-theme-zxcvb/master/_assets/zxcvb-black.png
+  thumb: http://carlog.qiniudn.com/zxcvb-black.png
   links:
     demo: http://zxcvb.hanhaishan.com/
     repo: https://github.com/haishanh/hexo-theme-zxcvb
@@ -76,7 +76,7 @@ terminal:
 notedown:
   name: Note Down
   date: 2015-10-12
-  thumb: http://hanhaishan.com/notedown/img/notes.svg
+  thumb: http://carlog.qiniudn.com/notes.svg
   description:
     - (Deprecated)
     - Turnning your markdown files into well structured html notes website.
